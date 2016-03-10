@@ -1,0 +1,10 @@
+insert into user(user_name, first_name, last_name, birthday) values('pbeahan', 'Damarcus', 'Hickle', '1972-12-02');
+insert into user(user_name, first_name, last_name, birthday) values('marlanaferry', 'Noemie', 'Senger', '1958-08-28');
+insert into user(user_name, first_name, last_name, birthday) values('nadercielo', 'Trudie', 'Jast', '1946-09-14');
+insert into user(user_name, first_name, last_name, birthday) values('lyndseymedhurst', 'Crawford', 'Hudson', '1948-06-13');
+insert into user(user_name, first_name, last_name, birthday) values('mraziridian', 'Johnathan', 'Mills', '1998-09-27');
+insert into user(user_name, first_name, last_name, birthday) values('qcrist', 'Shelby', 'Braun', '1984-01-21');
+insert into user(user_name, first_name, last_name, birthday) values('konopelskiardeth', 'Regan', 'Kuhlman', '1973-10-29');
+insert into user(user_name, first_name, last_name, birthday) values('zulaufjaylen', 'Randi', 'Ondricka', '2001-11-14');
+insert into user(user_name, first_name, last_name, birthday) values('oschiller', 'Desean', 'Carroll', '1974-08-16');
+insert into user(user_name, first_name, last_name, birthday) values('jamin97', 'Squire', 'Lynch', '2004-03-25');
