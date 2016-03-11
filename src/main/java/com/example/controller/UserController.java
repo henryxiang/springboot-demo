@@ -1,6 +1,6 @@
 package com.example.controller;
 
-import java.com.example.domain.QUser;
+import com.example.domain.QUser;
 import java.util.List;
 
 import javax.persistence.EntityManager;
