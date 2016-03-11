@@ -25,6 +25,10 @@ public class UserController {
 	
 	@RequestMapping(value="/users")
 	public List<User> listUsers() {
+//		QUser user = QUser.user;
+//		JPAQueryFactory query = new JPAQueryFactory(entityManager);
+//		Query jpaQuery = query.selectFrom(user.getClass()).createQuery();
+//		List<User> users = query.selectFrom(user);
 		String jpql = "select u from User as u";
 		TypedQuery<User> query = entityManager.createQuery(jpql, User.class);
 		
