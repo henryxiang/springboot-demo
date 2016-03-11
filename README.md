@@ -53,3 +53,24 @@ spring init --build=maven -d=web --packaging=war --java-version=1.8 springboot-d
   </dependency>
 
 ```
+
+### Configure logback.xml
+
+```
+  <?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE xml>
+  <configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+  </configuration>
+
+```
+
+### Spring Security
+
+```
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-security</artifactId>
+	</dependency>
+
+```
