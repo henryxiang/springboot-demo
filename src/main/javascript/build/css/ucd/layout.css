@@ -1,0 +1,37 @@
+#ui-datepicker-div {
+	font-size: 0.9em;
+}
+
+.ui-widget .ui-widget {
+	font-size: 0.9em;
+}
+
+.ui-dialog-titlebar {
+	font-size: 0.8em;
+}
+
+.ui-dialog-buttonpane {
+	font-size: 0.8em;
+}
+
+.tab {
+	margin-left: 3em;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+}
+
+.side-tab {
+	margin-left: 3em;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+	display: inline;
+}
+
+.contentTab {
+	margin-left: 1em;
+	margin-top: 0.5em;
+}
+
+.hidden{
+	display: none;
+}

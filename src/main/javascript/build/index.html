@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TRS Work Scheduler</title>
+    <link rel="stylesheet" href="css/uportal.css" type="text/css">
+    <link rel="stylesheet" href="css/ucd/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/jmesa.css" type="text/css" />
+    <link rel="stylesheet" href="css/ucd/dta-1.0.css" type="text/css" /> 
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />  
+  </head>
+  <body class="uportal-background-content">
+
+    <!-- Begin Page Banner --> 
+    <div class="uportal-background-med guiTemplateTitleRow">
+      <span class="uportal-channel-title leftjust">
+        <img src="images/ucd/ucdavis_logo_gold.png" alt="Time Reporting System" title="Time Reporting System" border="0" height="22">
+        <big style="font-size: 150%; font-weight: 900; padding-left: 1em;">Time Reporting System</big>
+      </span>
+      <span class="rightjust">
+        <a class="uportal-navigation-category" href="/trs/welcome.htm">Home</a>
+          | 
+        <a class="uportal-navigation-category" href="javascript:adcom_gui_confirmLogout();">Logout</a>
+      </span>
+      <div class="guiTemplateSpacer"></div>
+    </div>
+
+    <!-- User greeting and current date -->
+    <div class="uportal-background-light uportal-channel-text guiTemplateRow">
+      <div class="guiTemplateSpacer"></div>
+      <span class="leftjust">Welcome XIANG, HENRY</span>
+      <span class="rightjust">March 10, 2016</span>
+      <div class="guiTemplateSpacer"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="uportal-channel-text uportal-background-dark" id="guiTemplateTab">
+      <a name="tabs"></a>
+      <!-- Main navigation tabs -->
+      <ul>
+        <li class="uportal-background-light"><a class="uportal-navigation-category" href="/trs/supervisor.htm?createsort=true">Manage My Staff</a></li>
+        <li class="uportal-background-light"><a class="uportal-navigation-category" href="/trs/dtaMonthly.htm?timesheetsExempt_cw_=true&amp;timesheetsNonExempt_cw_=true">Review/Submit Payroll</a></li>
+        <li class="uportal-background-med"><a class="uportal-navigation-category" href="/trs/searchemployee.htm">Manage Employee</a></li>
+        <li class="uportal-background-light"><a class="uportal-navigation-category" href="/trs/promptDtaPayrollReport.htm">Generate Reports</a></li>
+        <li class="uportal-background-light"><a class="uportal-navigation-category" href="/trs/feeder/searchFeederFiles.htm">Manage Feeder</a></li>
+        <li class="uportal-background-light"><a class="uportal-navigation-category" href="/trs/searchtimesheet.htm?viewer=admin">Maintenance</a></li>
+        <li class="uportal-background-light"><a class="uportal-navigation-category" href="/trs/employee/accessCurrentTimesheet.htm">Manage My Time</a></li>
+      </ul>
+      <!-- Sub-tabs -->
+      <div class="uportal-background-med" id="guiTemplateTabOptions">
+        <a href="/trs/searchemployee.htm" class="uportal-navigation-channel">Search Employee Profile</a>
+        <a href="/trs/searchSupervisor.htm" class="uportal-navigation-channel">Search/Replace Supervisor</a>
+        <a href="/trs/workschedule.htm" class="uportal-navigation-channel"><span class="uportal-navigation-channel-selected">Manage Work Schedule</span></a>
+      </div>
+    </div>
+    
+    <!-- App mounting point -->
+    <div id="app"></div>
+
+    <script src="vendors.js"></script> 
+    <script src="app.js"></script>
+
+  </body>
+</html>

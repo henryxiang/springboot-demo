@@ -1,0 +1,64 @@
+.payScheduleTab {margin-left: 0.5em; margin-bottom: 0.5em; margin-top: 0.5em;}
+
+.pending{
+  border: 1px;
+}
+
+.dueDateTab {margin-left: 1em; margin-bottom: 1em; margin-top: 1em;}
+.columnStyle {vertical-align: text-top;}
+.hourWorkDto{
+  margin-bottom: .1em
+}
+.hourType {position: absolute;}
+.hourWorked {margin-left: 72px; margin-right: 0.2em;}
+.hidden{display: none;}
+
+
+/****CUSTOMZIATIONS on jquery UI CSS starts ************/
+#ui-datepicker-div {
+	font-size: 0.9em;
+	z-index: 9999; /*must have for date picker to appear in front of dialog box*/ 
+}
+
+.ui-widget .ui-widget{
+    font-size: 0.9em;
+}
+
+.ui-dialog-titlebar{
+	font-size: 0.8em;
+}
+
+.ui-dialog-buttonpane{
+	font-size: 0.8em;
+}
+/****CUSTOMZIATIONS on jquery UI CSS ends ************/
+
+.supervisor{
+      margin-left: 1em; 
+      margin-top: 1em; 
+      margin-bottom: 1em;
+    }
+.supervisor a{
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.supervisor a:hover{
+  text-decoration: none;
+  /*font-weight: bold;*/
+  color: #0F6497;
+  cursor: pointer;
+}
+
+.supervisor a:visited{
+  text-decoration: none; 
+  color: #0F6497;
+}
+
+.highlight {
+  background-color: #FFFFA8;
+}
+
+.highlight-green{
+  background-color: #D5FFA8;
+}

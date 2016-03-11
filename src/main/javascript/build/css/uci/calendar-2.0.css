@@ -1,0 +1,646 @@
+.calendar-body{
+	/*background-color: #FFFFFF;
+	color: #000000;*/
+	/*margin: 1em;*/
+	/*padding: 0;*/
+	/*font-size: 62.5%;*/
+	/*margin: 0;*/
+	font-family: Arial, sans-serif;
+}
+
+.timesheet{
+	/*margin-top: 0.5em;*/
+	margin-left: 1em;
+}
+
+#calendar{
+	/*position:relative;*/
+	/*display:inline;*/
+	/*float:left;*/
+}
+
+#leavebalance{
+	/*
+	position:absolute;
+	left: 835px;
+	*/
+	/*display:inline;*/
+	width: 120px;
+}
+
+.header-light{
+	color: #3F3F3F;
+	font-weight: bold;
+	/*border-bottom: 1px #3F3F3F;*/  
+	border-bottom: 1px solid #9E9E9E;
+}
+
+.header-strong{
+	font-weight: bold;
+	/*border-bottom: 1px #3F3F3F;*/  
+	border-bottom: 1px solid #9E9E9E;
+}
+
+/****CUSTOMZIATIONS on jquery UI CSS starts ************/
+#ui-datepicker-div {
+	font-size: 0.9em;
+	z-index: 9999; /*must have for date picker to appear in front of dialog box*/ 
+}
+
+.ui-widget .ui-widget{
+    font-size: 0.9em;
+}
+
+.ui-dialog-titlebar{
+	font-size: 0.8em;
+}
+
+.ui-dialog-buttonpane{
+	font-size: 0.8em;
+}
+
+/*.ui-button-text-only .ui-button-text{
+	padding-top: 0.2em; 
+	padding-bottom: 0.2em;
+	font-size: 0.8em;
+}*/
+/****CUSTOMZIATIONS on jquery UI CSS ends ************/
+
+.notetable, .caption, .footer, .footer-option, #tsActions{
+	border-collapse: collapse;
+	width: 830px;
+}
+
+.caption{
+	/*text-align: center;*/
+	/*font: bold 0.9em Georgia, Times, serif;*/
+	/*padding-bottom: 0.4em;*/
+	background-color: #EDEDED;
+	/*font-variant: small-caps;*/
+}
+
+.footer{
+	background-color: #F6F6F6;
+}
+
+.footer-option{
+	font-size: 0.9em;
+	color: #3F3F3F;
+	font-weight: bold;
+	margin-bottom: 4em;
+}
+
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}
+
+/** Need this to add a table border to the calendar **/
+.clmonth{
+	border: 1px solid #9E9E9E;
+	border-collapse: collapse;
+    width: 830px;
+    /*background: url(../image/BigSunWatermark.jpg) 50% 50% no-repeat;*/
+}
+
+.clmonth th{
+	border: 1px solid #9E9E9E;
+	border-bottom: none;
+	padding: 0em 0.5em 0em 0.5em;
+	background-color: #CCCCCC;
+	color: #3F3F3F;
+	font-size: 95%;
+	/*font: 0.75em Arial, sans-serif;*/
+}
+
+.clmonth th.weekend{width: 14.30%;}
+.clmonth th.weekday{width: 14.28%;}
+
+.clmonth td{
+	border: 1px solid #B2B1B1;
+	/*font-size: 0.70em;*/
+	font-size: 0.90em;
+	padding: 0em;
+	vertical-align: top;
+	height: 97px;
+}
+
+.clmonth td.message{
+	font-size: 1em;
+	height: 60px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.clmonth td.previous{
+}
+
+.clmonth td.weekend{
+	background-color: #E9EDF1;
+	color: #424040;
+}
+
+.clmonth td.holiday{
+	background-color: #EAF8FE;
+}
+
+.clmonth td.sdfApproved{
+	background-color: #E8FAEC;
+}
+
+.clmonth td.today{
+	/*
+	background: #c8e6aa url(jquery/redmond/images/ui-bg_gloss-wave_55_c8e6aa_500x100.png) 50% 50% repeat;
+	color: #2B5070;
+	background-color: #D8C7E4;
+	*/;
+	border: 3px solid #A9CC95;
+}
+
+.clmonth td.alternate{
+	background-color: #F3FFD1;
+}
+
+.myselection ul{
+	list-style-type: none;
+	margin: 0;
+	padding-top: 0.4em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	padding-bottom: 0.2em;
+}
+
+.myselection li{
+	margin-bottom: 0.4em;
+	color: #0F6497;
+	width: 90px; 
+}
+
+.clmonth select{
+	width: 5em;
+	color: #2B5070;
+	/*background-color: #B1CBE1;*/
+	background-color: #D7E9F2;
+	border: 1px solid #2B5070;
+}
+
+.myday{
+	font-weight: bold;
+    display: inline;
+    margin-bottom: 0.2em;
+    margin-top: -0.1em;
+    margin-left: -0.1em;
+    padding: 0.3em 0.7em 0.3em 0.7em;
+    float: left;
+    color: #91B4C7;
+}
+
+.mydayprevious{
+	font-weight: bold;
+	color: #91B4C7;
+    display: inline;
+    margin-bottom: 0.2em;
+    padding: 0.2em 0.6em 0.2em 0.6em;
+    float: left;
+}
+
+.myday-caption{
+	font-weight: bold;
+	margin: 0em;
+	padding: 0em 0.4em 0em 0.4em;
+	width: 1.5em;
+}
+
+.reg-day{
+	color: #4682B4;
+	background-color: #D7E9F2;
+	border: 1px solid #B2B1B1;
+}
+
+.sdf-approved-day{
+	color: #EAFEED;
+	background-color: #EAFEED;
+	border: 1px solid #B2B1B1;
+}
+
+.alt-day-1{  /* fixed yellow*/
+	color: #B88A00;
+	background-color: #FFFDDB;
+	border: 1px solid #B2B1B1;
+}
+
+.alt-day-2{  /* variable orange */
+	color: #D67200;
+	background-color: #FAEDDE;
+	border: 1px solid #B2B1B1;
+}
+
+.alt-day-3-1{ /* 9/80 week 1 green */
+	color: #5B7A06;
+	background-color: #E6F0CE;
+	border: 1px solid #B2B1B1;
+}
+
+.alt-day-3-2{ /* 9/80 week 2 light blue */
+	color: #16718C;
+	background-color: #E6FAF9;
+	border: 1px solid #B2B1B1;
+}
+
+.alt-day-4{  /* 4/40 purple */
+	color: #715CAD;
+	background-color: #F2E8FC;
+	border: 1px solid #B2B1B1;
+}
+
+.cellcorner{
+	display: inline;
+    float: right;
+    margin-right: -0.1em;
+    margin-top: -0.1em;
+}
+
+.clicklocation{
+	float: left;
+	width: 5em;
+	font-size: 0.9em;
+}
+
+.myclickselect{
+    padding: 0.2em 0.6em 0.2em 0.6em;
+    /*background-color: #E6D9E8;*/
+}
+
+.myclick{
+	padding: 0.1em 0.2em 0.1em 0.2em;
+    /*border: 1px solid #8AA8D8;*/
+    border-top: 1px solid #EAEAEA;
+    border-left: 1px solid #EAEAEA;
+    border-bottom: 1px solid #4682B4;
+    border-right: 1px solid #4682B4;
+    color: #0F6497;
+    display: block;
+}
+
+.myclick a{
+  outline:none;
+  text-decoration: none; 
+  font-weight: normal;
+  color: #0F6497; /*In the Add... drop down list, links are shown as blue */
+}
+
+.myclick a:active{
+  outline:none;
+  text-decoration: none; 
+}
+
+.myclick a:visited{
+  text-decoration: none; 
+  color: #0F6497;
+}
+
+
+.myselection{
+    background-color: #FFFFFF;
+    /*background-color: #DFBDE5;*/
+    position: absolute;
+    z-index: 9999; /*must have to appear in front of dialog box -- doesn't work*/
+    border: 1px solid #EAEAEA;
+    /*padding: 0.1em 0.2em 0.1em 0.2em;*/
+}
+
+.myclickselect .hover {
+  cursor: pointer;
+  background-color: #D4E2E5;
+}
+
+.hoverselect{
+  background-color: #D4E2E5;
+  cursor: pointer;
+}
+
+.hourrow{
+	clear: both;
+	padding-top: 0.1em;
+}
+
+.hidden{
+	display: none;
+}
+
+.hour-input-3{/*pink vacation*/
+	background-color: #FAD0F2;
+	border: 1px solid #D88ABF;
+}
+
+.hour-input-4{/*light green sick*/
+	background-color: #DAF4AB;
+	border: 1px solid #BEEB6B;
+}
+
+.hour-input-5{/*orange FMLA*/
+	background-color: #FFEFC6;
+	border: 1px solid #F8D07E;
+}
+
+
+.hour-input-6{/*yellow comp*/
+	background-color: #FEFF94;
+	border: 1px solid #F6FF16;
+}
+
+.hour-input-7{ /*red furlough*/
+	background-color: #FFD5D5;
+	border: 1px solid #E18585;
+}
+
+.hour-input-8 /*orange voting*/{
+	background-color: #F9E3BB;
+	border: 1px solid #F5BB74;
+}
+
+.hour-input-9 /*purple jury*/{
+	background-color: #D7D1F7;
+	border: 1px solid #8D7FD5;
+}
+
+.hour-input-10{/*blue clock i/o*/
+	background-color: #DFE8ED;
+	border: 1px solid #91B4C7;
+}
+
+.hour-input-12 /*aqua LeaveWOPay*/{
+	background-color: #DAF5F1;
+	border: 1px solid #A2F0E5;
+}
+
+.hour-input-13 /*green PTO paid time off*/{
+	background-color: #C0EBD4;
+	border: 1px solid #8ABFAA;
+}
+
+.hour-input-14 /*dark green ERIT */{
+	background-color: #B5D6B0;
+	border: 1px solid #597D54;
+}
+
+.hour-input-15 /*blue */{
+	background-color: #BFD6FF;
+	border: 1px solid #5D6D9E;
+}
+
+.hour-input-16{ /*green */
+	background-color: #D1F1CC;
+	border: 1px solid #A4D88A;
+}
+
+.hour-input-17{/*light purple*/
+	background-color: #F2D1FF;
+	border: 1px solid #E0A8F5;
+}
+
+.hourrow-text{
+	text-align: center;
+	font-weight: bold;
+	color: #25A9D6;
+	padding: 0.2em 0.2em 0.2em 0.2em;
+}
+
+.hourrow-output{
+	clear: both;
+	padding: 0.2em 0.2em 0.2em 0.2em;
+}
+
+.hourrow-previous{
+	color: #6E6E6E;
+}
+
+.hour-blue{
+	color: #3D63CC;
+}
+
+.hour-green{
+	color: #3DA61B;
+}
+
+.hour-pink{
+	color: #B9309D;
+}
+
+.hour-yellow{
+	color: #CCAB3D;
+}
+
+.myselection a{
+  text-decoration: none; 
+  font-weight: normal;
+  color: #0F6497; /*In the Add... drop down list, links are shown as blue */
+}
+
+.myselection a:hover{
+	
+  /*font-weight: bold;*/
+  text-decoration: none;
+  color: #0F6497;
+  cursor: pointer;
+}
+
+.myselection a:visited{
+  text-decoration: none; 
+  color: #0F6497;
+}
+
+.myselection a img{
+  border: none;
+}
+
+#warningDiv a{
+  text-decoration: none;
+  font-weight: normal;
+}
+
+#warningDiv a:hover{
+  text-decoration: none;
+  /*font-weight: bold;*/
+  color: #0F6497;
+  cursor: pointer;
+}
+
+#warningDiv a:visited{
+  text-decoration: none; 
+  color: #0F6497;
+}
+
+
+.hoursection {
+	clear: both;
+}
+
+.mylabel{
+	display: inline;
+	padding: 0.1em;
+	position: absolute;
+}
+
+.clmonth td input.hourInput{
+    display: inline;
+	margin-left: 52px;
+	padding: 0.1em;
+	font: 0.90em Verdana, sans-serif;
+	width: 4em;
+}
+
+.clmonth .myhouroutput{
+    display: inline;
+	padding: 0.1em;
+	margin-left: 60px;
+}
+
+.myhour-output{
+	/*background-color: #61B5CF;*/
+	display: inline;
+	/*padding: 0.2em, 0.6em, 0.2em, 0.6em ;*/
+	margin-left: 62px;
+	/*margin-left: 6em;*/
+	/*font-size: 1.0em;*/
+}
+
+.date{
+	background-color: #61B5CF;
+}
+
+.shrink{
+	font-size: 95%;
+}
+
+.shrink-more{
+	font-weight: normal;
+}
+
+.multihour{
+	width: 830px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border: 1px solid #717171;
+}
+
+#title{
+	display: block;
+	background-color: #CCCCCC;
+	color: #3F3F3F;
+	padding: 0.2em 0.6em 0.2em 0.6em;
+	margin-bottom: 10px;
+	/*font: 120% Verdana, sans-serif;*/
+}
+
+.multihourlabel{
+	/*font-size: 1.2em;*/
+	margin-right: 1em;
+}
+
+.multihourrow{
+	display: inline;
+	margin-right: 4em;
+}
+.notetable td{
+    /*font: 0.75em Arial, sans-serif;*/
+    /*font-size: 0.75em;*/
+    /*border: 1px dotted;*/
+    text-align: left;
+	vertical-align: top;
+}
+
+.notetable th{
+	/*font: 0.75em Arial, sans-serif;*/
+	font-weight: bold;
+	text-align: left;
+}
+
+.notetable textarea{
+	width: 90%;
+	height: 4em;
+}
+
+.clockinout{
+	cursor: pointer;
+}
+
+.hints{
+	font-size: 0.8em;
+	color: #666666;
+}
+
+.highlight {
+  background-color: #FFFFA8;
+}
+
+.highlight-green{
+  background-color: #D5FFA8;
+}
+
+.highlight-purple{
+  background-color: #E5CCFF;
+}
+
+.signature td {
+  padding-right: 10px;
+}
+
+.underline{
+  border-bottom: 1px solid #B2B1B1;
+}
+
+.dist{
+	display: inline;
+	font-weight: bold;
+	position: absolute;
+}
+
+.indent-first{
+	display: inline;
+	position: absolute;
+	margin-left: 2em;
+}
+
+.indent-second{
+	display: inline;
+	margin-left: 6em;
+}
+
+.indent-simple{
+	margin-left: 2em;
+}
+
+.user-action{
+	padding-bottom: 0.2em;
+}
+
+.ts-action{
+	cursor: pointer;
+}
+
+.green-button{
+	border: 1px solid #A0E36D;
+	background: #c8e6aa url(jquery/redmond1.8.9/images/uci/ui-bg_gloss-wave_55_c8e6aa_500x100.png) 50% center repeat-x; 
+	color: #2C5E06;
+}
+
+.green-button:hover{
+	border: 1px solid #5DB519;
+	color: #224A04;
+}
+
+.green-button:active{
+	border: 1px solid #5DB519;
+	background: #c8e6aa url(jquery/redmond1.8.9/images/ui-bg_inset-hard_100_f5f8f9_1x100.png) 50% center repeat-x;
+	color: #e17009;
+}
+
+.grayout{
+	background-color: #EDEDED;
+	color: #919191;
+}

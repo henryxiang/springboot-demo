@@ -1,0 +1,223 @@
+/* 
+ * This file is the only uportal css loaded into otherwise standalone applications.
+ * It serves to reset some browser defaults and supply uportal-wide css.
+ * media/org/jasig/portal/layout/DLM-tab-column/nested-tables/uci_blue_beige/
+ *     skin/uci_blue_beige.css links to this file.
+ */
+
+body {font-size: 75%;}
+table {font-size: 100%;} /* IE Fix */
+
+/* Firefox defaults */
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1 { font-size: 2em; margin: .67em 0; }
+h2 { font-size: 1.5em; margin: .83em 0; }
+h3 { font-size: 1.17em; margin: 1em 0; }
+h4 { font-size: 1em; margin: 1.33em 0; }
+h5 { font-size: 0.83em; margin: 1.67em 0; }
+h6 { font-size: 0.67em; margin: 2.33em 0; }
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #2E4061;
+}
+a:visited {
+	color: #2E4061;
+}
+a:hover {
+	color: #993333;
+  text-decoration: underline;
+}
+
+p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.uportal-text {
+	color: #000000;
+	font-size: 0.9em;
+}
+.uportal-text-small {
+	color: #000000;
+	font-family: Verdana, Geneva, Arial, Helvetica;
+	font-size: 0.85em;
+}
+.uportal-title {
+	color: #336699;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.ucd-title-small {
+	color: #336699;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.uportal-button {
+	color: #000000;
+	font-size: 0.9em;
+  background-color: #FFCC66;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+.uportal-label {
+	color: #000000;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.uportal-input-text {
+	color: #000000;	
+  font-size: 0.9em;
+	font-family: Monaco, Andale Mono, monospace;
+	background: #d7dfef;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #999;
+  border-left: 1px solid #999;
+  padding: 0px 2px;
+}
+.uportal-text-reversed {
+	color: #ffffff;
+	font-size: 0.9em;
+}
+.uportal-navigation-category {
+	color: #444444;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.uportal-navigation-category:visited {
+  color: #444444;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.uportal-navigation-category:hover {
+	color: #993333;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.uportal-navigation-category-selected {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #333333;
+}
+.uportal-navigation-channel {
+	color: #000000;
+	font-size: 0.9em;
+}
+.uportal-navigation-channel:visited {
+	color: #000000;
+	font-size: 0.9em;
+}
+.uportal-navigation-channel:hover {
+	color: #18499C;
+	font-size: 0.9em;
+}
+.uportal-navigation-channel-selected {
+	background-color: #000000;
+	font-size: 0.9em;
+  padding: 1px;
+	color: #eeeeee;
+}
+.uportal-crumbtrail {
+  font-size: 0.9em;
+  padding-top: 0.3em;
+  padding-bottom: 0.6em;
+  color: #666666;
+}
+.uportal-copyright {
+	font-size: 0.85em;
+	color: #A0B4E1;
+	font-style: italic;
+}
+.uportal-channel-text {
+	color: #000000;
+}
+.uportal-channel-title {
+	color: #336699;
+	font-family: Tahoma, Verdana, Georgia, "MS Sans Serif", Geneva, sans-serif;
+	font-weight: bold;
+}
+.uportal-channel-title-reversed {
+	color: #996666;
+	font-family: Tahoma, Verdana, Georgia, "MS Sans Serif", Geneva, sans-serif;
+	font-weight: bold;
+}
+.uportal-channel-subtitle {
+	color: #000000;
+	font-family: Tahoma, Verdana, Georgia, "MS Sans Serif", Geneva, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.uportal-channel-subtitle-reversed {
+	color: #333333;
+	font-family: Tahoma, Verdana, Georgia, "MS Sans Serif", Geneva, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.uportal-channel-emphasis {
+	font-weight: bold;
+}
+.uportal-channel-strong {
+	font-weight: bold;
+}
+.uportal-channel-code {
+	color: #000000;
+	font-size: 0.9em;
+	font-family: Monaco, Andale Mono, monospace;
+}
+.uportal-channel-copyright {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 0.85em;
+	color: #000000;
+	font-style: italic;
+}
+.uportal-channel-warning {
+	font-size: 0.9em;
+	color: #BA0000;
+}
+.uportal-channel-error {
+	color: Red;
+	font-weight: bold;
+}
+.uportal-channel-table-caption {
+	color: #993333;
+	font-weight: bold;
+  text-align: center;
+}
+.uportal-channel-table-header {
+	color: #303D58;
+	font-weight: bold;
+	text-align: left;
+}
+.uportal-channel-table-row-even { background-color: #FFFFFF; }
+.uportal-channel-table-row-odd { background-color: #EFEFEF; }
+.uportal-background { background-color: #FFFFFF; }
+.uportal-background-light { background-color: #DEDEDE; } /*light blue: DDEEFF*/
+.uportal-background-med { background-color: #B5C2D3; }
+.uportal-background-dark { background-color: #336699; }
+.uportal-background-content { background-color: #FFFFFF; }
+.uportal-background-highlight { background-color: #EFEFEF; }
+.uportal-background-shadow { background-color: #000000; }
+.uportal-background-page { background-color: #FFFFFF; }
+.uportal-background-semidark { background-color: #AAAAAA; }
+.uportal-background-selected { background-color: #C0D6F6; }
+tr.uportal-background-selected-hover:hover td { background-color: #C0D6F6; }
+.uportal-background-neutral-dark { background-color: #666666; }
+.uportal-background-neutral-light { background-color: #CCCCCC; }
+.uportal-background-header {
+	background-color: #B5C2D3;
+	background-image: url("../images/ucd/header-background-gradient.png");
+  background-repeat: repeat-y;
+}
+.uportal-background-content, .uportal-background-dark, .uportal-background-med, .uportal-background-light {
+  font-family: Verdana, Geneva, Arial, Helvetica;
+  margin: 0;
+}
+
