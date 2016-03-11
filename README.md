@@ -111,6 +111,7 @@ spring init --build=maven -d=web --packaging=war --java-version=1.8 springboot-d
     </plugin>
 	
 ```
+
 ### JSP View Template
 
 ```
