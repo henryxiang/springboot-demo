@@ -8,8 +8,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import com.querydsl.core.annotations.QueryProjection;
-
 import lombok.Data;
 
 @Entity
@@ -24,10 +22,5 @@ public class User implements Serializable {
 	private String firstName;
 	private String lastName;
 	private Date birthday;
-	
-	@QueryProjection
-	public User(Long id) {
-		this.id = id;
-	}
 
 }
