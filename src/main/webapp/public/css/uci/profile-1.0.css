@@ -1,0 +1,144 @@
+
+/****CUSTOMZIATIONS on jquery UI CSS starts ************/
+#ui-datepicker-div {
+	font-size: 0.9em;
+	z-index: 9999; /*must have for date picker to appear in front of dialog box*/ 
+}
+
+.ui-widget .ui-widget{
+    font-size: 0.9em;
+}
+
+.ui-dialog-titlebar{
+	font-size: 0.8em;
+}
+
+/*
+.ui-dialog-buttonpane{
+	font-size: 0.8em;
+}
+*/
+/****CUSTOMZIATIONS on jquery UI CSS ends ************/
+
+.tab {margin-left: 1em; margin-bottom: 1em; margin-top: 0.5em;}
+
+td a:hover{
+  text-decoration: none;
+  font-weight: bold;
+  color: #0F6497;
+  cursor: pointer;
+}
+
+.employeeTab {margin-left: 2em; margin-bottom: 1em; margin-top: 0.5em;}
+.contentTab {margin-left: 1em; margin-top: 0.5em;}
+.narrow{width: 40%;}
+.top{vertical-align:text-top;}
+
+.hidden{
+  display: none;
+}
+
+#add-sch div{
+	margin-left: 2em;
+	margin-bottom: 1em;
+}
+
+.hrWeekTable{
+	border-spacing: 1em;	
+}
+
+.hrWeekTable div{
+	height: 2em;
+}
+
+.week2{
+	background-color: #C9C9C9;
+}
+
+.schSmall{
+	margin-top: 0.5em; 
+	width: 45em;
+}
+
+.schMed{
+	margin-top: 2em; 
+	width: 50em;
+}
+
+.schLarge{
+	margin-top: 2em; 
+	width: 55em;
+}
+
+.totalWkHrs{
+	padding: 0em 0.5em 0em 0.5em;
+}
+
+.error{
+	color: #CD0A0A;
+}
+
+.grayout{
+	background-color: #EDEDED;
+	color: #919191;
+}
+
+.actionIcon{
+	cursor: pointer;
+}
+
+.grayout{
+	background-color: #EDEDED;
+	color: #919191;
+}
+
+
+.profileLeft{
+	vertical-align: top;     
+}
+
+.profileRight{
+	vertical-align: top;
+}
+.policyLabel{
+    display:block;
+    text-align:left;
+    width:40%;
+    float:left;
+    padding-top: 3;
+
+}  
+
+.policyResult{
+float:left;
+width: 60%;
+text-align: left;
+word-wrap:break-word;
+padding-top: 3;
+}
+
+.profLabel{
+	display:block;
+	text-align:left;
+	width:30%;
+	float:left;
+	padding-top: 3;
+
+}  
+
+.profResult{
+float:left;
+width: 70%;
+text-align: left;
+word-wrap:break-word;
+padding-top: 3;
+}
+
+.profTable{
+    display:block;
+    text-align:left;
+    width:100%;
+    float:left;
+padding-top: 3;
+    
+}  

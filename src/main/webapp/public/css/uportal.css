@@ -1,0 +1,103 @@
+div.guiTemplateSpacer {
+  clear: both;
+}
+    
+div.guiTemplateTitleRow {
+  padding-right: 4px;
+  padding-left: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+div.guiTemplateTitleRow span.rightjust {
+  float: right;
+  text-align: center;
+  padding-top: 8px;
+}
+
+div.guiTemplateTitleRow span.leftjust {
+  float: left;
+  text-align: left;
+  padding-top: 4px;
+}
+  
+div.guiTemplateRow {
+  padding-right: 4px;
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+  
+div.guiTemplateRow span.rightjust {
+  float: right;
+  text-align: right;
+}
+  
+div.guiTemplateRow span.leftjust {
+  float: left;
+  text-align: left;
+}
+  
+div#guiTemplateTab {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-bottom: 0px;
+  padding-top: 15px;
+}
+  
+div#guiTemplateTab ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 4px;
+  padding-right: 0px;
+  padding-left: 5px;
+  list-style-type: none;
+  text-align: left; /*set to left, center, or right to align the menu as desired*/
+  border-bottom: 1px solid black;
+}
+
+div#guiTemplateTab ul li {
+  display: inline;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  margin-bottom: 4px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 4px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-left: 4px;
+  text-align: center;
+}
+
+div#guiTemplateTab ul li.uportal-background-med {
+  border-bottom: none;
+  padding-bottom: 5px;
+}
+
+div#guiTemplateTabOptions {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding: 2px;
+  text-align: left;
+}
+
+div#guiTemplateTabOptions a {
+  margin-left: 3px;
+  padding-top: 1px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 17px;
+}

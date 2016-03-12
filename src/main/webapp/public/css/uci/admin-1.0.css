@@ -1,0 +1,159 @@
+.ui-button-text-only .ui-button-text {
+  padding: 0em;
+}
+
+.ui-dialog-titlebar{
+	font-size: 0.8em;
+}
+
+#ui-datepicker-div {
+	font-size: 0.9em;
+}
+
+/*.ui-dialog-buttonpane{
+	font-size: 0.8em;
+}*/
+
+#contentwrapper{
+  float: left;
+  width: 100%;
+}
+
+.sub-menu-item {
+  width: 10em;
+}
+
+.sub-menu{
+  /*
+  float: left; 
+  width: 11%;
+  */
+  float: left;
+  width: 12em; /*Width of left column*/
+  /*margin-left: -100%;*/
+  /*background: #C8FC98;*/
+}
+
+.menu-content{
+  /*
+  float: right;
+  width: 89%;
+  */
+  margin-left: 12em; /*Set left margin to LeftColumnWidth*/
+}
+
+.innertube{
+  /*padding: 0.5em;*/
+  margin-left: 0.4em;
+  margin-top: 0.2em;
+}
+
+#footer{
+  clear: left;
+  width: 100%;
+  padding: 4px 0;
+}
+
+.action{
+	cursor: pointer;
+}
+
+.hidden{
+	display: none;
+}
+
+.tab {
+	margin-left: 0.5em; 
+	margin-top: 0.5em; 
+}
+
+.tab-more {
+	margin-left: 0.5em; 
+}
+
+.tableMini {
+	font-size: 0.95em;
+}
+
+.labelLeft {
+	display:inline;
+	width:150px;
+	float:left;
+}
+
+.labelLeftShort{
+	display:inline;
+	width:95px;
+	float:left;
+}
+
+.labelValue{
+	display:inline;
+	float:left;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.bold-blue{
+	font-weight: bold;
+	color: #085D96;
+	maring-bottom: 0.2em;
+	margin-top: 0.5em;
+}
+
+.splitTitle{
+	width: 20em;
+	border-bottom-style: solid;
+	border-bottom-color: #91B4C7;
+	border-bottom-width: 1px; 
+	padding-bottom: 0.2em;
+	margin-bottom: 0.5em;
+}
+
+.holidayTitle{
+	font-weight: bold;
+	width: 20em;
+	border-bottom-style: solid;
+	border-bottom-color: #085D96;
+	border-bottom-width: 1px; 
+	padding-bottom: 0.2em;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
+.underlineTitle{
+	width: 20em;
+	border-bottom-style: solid;
+	border-bottom-color: #085D96;
+	border-bottom-width: 1px; 
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.helpSec{
+	margin-top: 0.5em; 
+	margin-bottom: 0.5em; 
+	padding: 0 .7em; 
+	border-style: solid; 
+	border-color: #91B4C7; 
+	border-width: 1px; 
+	width: 90%; 
+	background-color: #C5D4ED;
+}
+
+.panelLeft{
+	width:400px;
+	float:left;
+}
+
+.panelRight{
+	margin-left:400px;
+}
+
+.help{
+	background-color: #C5D4ED;
+	cursor: help;
+}
+

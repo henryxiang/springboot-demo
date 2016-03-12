@@ -1,0 +1,120 @@
+body{
+	/*background-color: #FFFFFF;
+	color: #000000;*/
+	margin: 0em;
+	/*padding: 0;*/
+	/*font-size: 62.5%;*/
+	font-family: Arial, sans-serif;
+}
+
+p{
+	font-size: 90%;
+}
+/****CUSTOMZIATIONS on jquery UI CSS starts ************/
+.ui-accordion-header{
+	font-size: 0.8em;
+}
+
+.ui-accordion-content{
+	font-size: 0.8em;
+
+}
+/****CUSTOMZIATIONS on jquery UI CSS ends ************/
+
+#banner{
+	/*
+	background-image: url('../image/time.jpg');
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	*/
+	height: 85px;
+	overflow:hidden;
+}
+
+#main{
+	/*
+	top: 85px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	*/
+}
+
+.innertube{
+	margin: 15px;
+}
+
+img.floatleft{
+	float: left;
+	border: 0px;
+}
+
+img.floatright{
+	/*float: right;*/
+	border: 0px;
+}
+
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}
+
+hr{
+	color: #CFCFCF;
+	height: 1px;
+}
+
+.trs-ccordion{
+	margin: 5px;
+	width: 75%;
+}
+
+.footer-left{
+	margin: 5px;
+	float: left;
+	font-size: 80%;
+	color: #686867;
+}
+
+.footer-right{
+	margin-right: 5px;
+	float: right;
+	font-size: 80%;
+	color: #686867;
+}
+
+.summary{
+	width: 80%;
+}
+
+.link a {
+	text-decoration: none; 
+	font-weight: none;
+	color: #0F6497;
+}
+
+.link a:hover{
+  text-decoration: none;
+  font-weight: bold;
+  color: #0F6497;
+  cursor: pointer;
+}
+
+.link a:visited{
+  text-decoration: none; 
+  color: #0F6497;
+}
+
+/*
+#accordion_sup .ui-accordion .ui-accordion-content{ 
+	padding-top: 0;
+	padding-bottom: 0.2em;
+	padding-left: 2em;
+	padding-right: 0;
+}
+*/
+

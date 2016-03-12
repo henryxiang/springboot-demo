@@ -1,0 +1,102 @@
+.dta-section-menu{
+  margin-top: 0.2em;
+  margin-left: 0.2em;
+}
+.one-section{
+  vertical-align: center;
+  width: 14em;
+}
+.divider{
+  margin-top: -2px;
+  height: 2px;
+}
+.dta-section-menu a{
+  text-decoration: none;
+  font-weight: bold;
+}
+.dta-section-menu a:hover{
+  text-decoration: none; 
+  font-weight: bold;
+  color: #0F6497;
+  cursor: pointer;
+}
+.dta-section-menu a:visited{
+  text-decoration: none; 
+  font-weight: bold;
+}
+
+.dosHourTotal{
+  color: #263E5B;
+  font-weight: bold;
+}
+
+.timesheetsTab {
+  margin-left: 1em; 
+  margin-bottom: 1em;
+}
+
+.timesheetsTabMini{
+  margin-left: 0.5em; 
+  margin-bottom: 0.5em;
+  font-size: 0.9em; 
+}
+
+.deptSelected{
+  width: 100%;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+/*.fixedActionColumn{
+  width: 4.5em;
+}*/
+
+.custom-dark{
+  background-color: #B2B2B2;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /*Get Opacity to Work in Internet Explorer*/
+  -moz-opacity:0.5;  /*Some Older Versions of Mozilla Browsers Need a Little Help Too*/
+}
+
+.custom-nowrap{
+  white-space: nowrap;
+}
+
+.submit{
+  margin-left: 4.5em;
+}
+
+div.section{
+  margin-bottom: 1em;
+  font-size: 1.1em;
+}
+
+.ruler-light{
+  color: #D7E9F2;
+}
+
+.section-header-full{
+  margin-bottom: 0.3em;
+}
+
+.section-header{
+  display: inline;
+  position: absolute;
+  margin-left: 0.2em;
+  margin-top: 0.4em;
+}
+
+.error-row{
+  background: #f3d8d8 url(jquery/redmond/images/ui-bg_diagonals-thick_75_f3d8d8_40x40.png) 50% 50% repeat;
+}
+
+.user-action{
+    margin-left: 1em; 
+    padding-bottom: 0.2em;
+}
+
+.right{
+    float: right;
+}
+
+
