@@ -13,7 +13,7 @@ const TestApp = React.createClass({
     const {users} = this.state;
     return (
       <div>
-        <h3>Users List</h3>
+        <h3>User List</h3>
         <ul>
           {users.map((u,i) => (<li key={i}>{u.id}, {u.userName}, {u.firstName}, {u.lastName}, {u.birthday}</li>))}
         </ul>
