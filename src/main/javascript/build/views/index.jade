@@ -1,0 +1,73 @@
+//- params: userName, currentDate
+doctype html
+html
+  head
+    meta(charset='UTF-8')        
+    title TRS Work Scheduler       
+    link(rel='stylesheet', href='css/uportal.css', type='text/css')        
+    link(rel='stylesheet', href='css/ucd/main.css', type='text/css')        
+    link(rel='stylesheet', href='css/jmesa.css', type='text/css')        
+    link(rel='stylesheet', href='css/ucd/dta-1.0.css', type='text/css')       
+    link(rel='stylesheet', href='css/styles.css', type='text/css')
+     
+  body.uportal-background-content
+    // Begin Page Banner
+    .uportal-background-med.guiTemplateTitleRow
+      span.uportal-channel-title.leftjust
+        img(src='images/ucd/ucdavis_logo_gold.png', alt='Time Reporting System', title='Time Reporting System', border='0', height='22')
+                 
+        big(style='font-size: 150%; font-weight: 900; padding-left: 1em;') Time Reporting System
+             
+      span.rightjust
+        a.uportal-navigation-category(href='/trs/welcome.htm') Home 
+        |   |       
+        a.uportal-navigation-category(href='javascript:adcom_gui_confirmLogout();') Logout
+             
+      .guiTemplateSpacer
+    // User greeting and current date
+    .uportal-background-light.uportal-channel-text.guiTemplateRow
+      .guiTemplateSpacer
+             
+      span.leftjust Welcome #{userName}
+             
+      span.rightjust #{currentDate}
+             
+      .guiTemplateSpacer
+    // Navigation Bar
+    #guiTemplateTab.uportal-channel-text.uportal-background-dark
+      a(name='tabs')
+      // Main navigation tabs
+      ul
+        li.uportal-background-light
+          a.uportal-navigation-category(href='/trs/supervisor.htm?createsort=true') Manage My Staff
+                 
+        li.uportal-background-light
+          a.uportal-navigation-category(href='/trs/dtaMonthly.htm?timesheetsExempt_cw_=true&timesheetsNonExempt_cw_=true') Review/Submit Payroll
+                 
+        li.uportal-background-med
+          a.uportal-navigation-category(href='/trs/searchemployee.htm') Manage Employee
+                 
+        li.uportal-background-light
+          a.uportal-navigation-category(href='/trs/promptDtaPayrollReport.htm') Generate Reports
+                 
+        li.uportal-background-light
+          a.uportal-navigation-category(href='/trs/feeder/searchFeederFiles.htm') Manage Feeder
+                 
+        li.uportal-background-light
+          a.uportal-navigation-category(href='/trs/searchtimesheet.htm?viewer=admin') Maintenance
+                 
+        li.uportal-background-light
+          a.uportal-navigation-category(href='/trs/employee/accessCurrentTimesheet.htm') Manage My Time
+      // Sub-tabs
+      #guiTemplateTabOptions.uportal-background-med
+        a.uportal-navigation-channel(href='/trs/searchemployee.htm') Search Employee Profile
+                 
+        a.uportal-navigation-channel(href='/trs/searchSupervisor.htm') Search/Replace Supervisor
+                 
+        a.uportal-navigation-channel(href='/trs/workschedule.htm')
+          span.uportal-navigation-channel-selected Manage Work Schedule
+
+    // App mounting point
+    #app       
+    script(src='vendors.js') 
+    script(src='app.js')

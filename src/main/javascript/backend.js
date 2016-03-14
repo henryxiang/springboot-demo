@@ -5,8 +5,21 @@ var express = require('express'),
     server = express(),
     documentRoot = __dirname + '/build';
 
+server.set('view engine', 'jade');
+server.set('views', documentRoot+'/views');
+
 console.log("Use document root: " + documentRoot);
 server.use("/", express.static(documentRoot));
+
+server.get("/", function(req, res) {
+  var userName = "XIANG, HENRY";
+  var currentDate = moment().format("MMMM DD, YYYY")
+  res.render("index", {userName: userName, currentDate: currentDate});
+});
+
+server.get("/test", function(req, res) {
+  res.render("test", {title: 'Testing Page'});
+});
 
 server.get("/user/:id", function(req, res) {
   var user = {
