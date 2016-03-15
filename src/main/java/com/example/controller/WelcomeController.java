@@ -27,4 +27,13 @@ public class WelcomeController {
 		model.addAttribute("appJs", "test.js");
 		return "test";
 	}
+	
+	@RequestMapping(value="/jade")
+	public String testJade(Model model) {
+		log.info("*** Test Jade Template ***");
+		model.addAttribute("time", new Date());
+		model.addAttribute("appJs", "test.js");
+		return "testJade";
+	}
+	
 }

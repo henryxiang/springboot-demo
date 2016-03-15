@@ -1,0 +1,11 @@
+doctype html
+html
+	head
+		title Test Jade
+		link(rel="stylesheet" href="/public/css/styles.css" type="text/css")
+	body
+		#app
+		script(src="/public/vendors.js")
+		script(src="/public/#{appJs}")
+		
+		div Timestamp: #{time}
