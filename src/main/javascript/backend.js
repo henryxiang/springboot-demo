@@ -12,7 +12,7 @@ console.log("Use document root: " + documentRoot);
 server.use("/", express.static(documentRoot));
 
 server.get("/", function(req, res) {
-  var userName = faker.name.findName();
+  var userName = faker.name.firstName() + ' ' + faker.name.lastName();
   var currentDate = moment().format("MMMM DD, YYYY")
   res.render("index", {userName: userName, currentDate: currentDate});
 });

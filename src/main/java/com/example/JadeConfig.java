@@ -34,7 +34,7 @@ public class JadeConfig {
     public ViewResolver viewResolver() {
         JadeViewResolver viewResolver = new JadeViewResolver();
         viewResolver.setConfiguration(jadeConfiguration());
-        log.info("Jade view resolver");
+        log.info("Created Jade view resolver");
         return viewResolver;
     }
 }

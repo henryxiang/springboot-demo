@@ -1,0 +1,582 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"user",
+				"userName"
+			],
+			[
+				"err",
+				"errors"
+			],
+			[
+				"lv",
+				"livereloadConfig"
+			],
+			[
+				"docu",
+				"documentRoot"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"sear",
+				"searchEl"
+			],
+			[
+				"res",
+				"resetFilter"
+			],
+			[
+				"set",
+				"setFilter"
+			],
+			[
+				"search",
+				"searchEmployee"
+			],
+			[
+				"SE",
+				"SELECT"
+			],
+			[
+				"curr",
+				"current_flag"
+			],
+			[
+				"sch",
+				"scheduleEndDate"
+			],
+			[
+				"sche",
+				"scheduleStartDate"
+			],
+			[
+				"new",
+				"newDateText"
+			],
+			[
+				"ha",
+				"handleDateChange"
+			],
+			[
+				"date",
+				"dateValue"
+			],
+			[
+				"defa",
+				"defaultDate"
+			],
+			[
+				"re",
+				"renderUI"
+			],
+			[
+				"j",
+				"jquery"
+			],
+			[
+				"jqu",
+				"jquery-ui"
+			],
+			[
+				"rcc",
+				"rcc	React: legacy component"
+			],
+			[
+				"ne",
+				"nextIndex"
+			],
+			[
+				"get",
+				"getWorkingCopy"
+			],
+			[
+				"schedul",
+				"scheduleMap"
+			],
+			[
+				"ren",
+				"renderScheudleType"
+			],
+			[
+				"schedule",
+				"scheduleType"
+			],
+			[
+				"in",
+				"indexList"
+			],
+			[
+				"sorted",
+				"sortedScheduleMap"
+			],
+			[
+				"scheduleM",
+				"scheduleMap"
+			],
+			[
+				"mon",
+				"moment"
+			],
+			[
+				"de",
+				"deleteSchedule"
+			],
+			[
+				"job",
+				"jobTitle"
+			],
+			[
+				"han",
+				"handlePanelSelected"
+			],
+			[
+				"acti",
+				"activeKey"
+			],
+			[
+				"schu",
+				"scheduleTmplates"
+			],
+			[
+				"E",
+				"Evening"
+			],
+			[
+				"cu",
+				"currentIndex"
+			],
+			[
+				"sched",
+				"schedules"
+			],
+			[
+				"empl",
+				"employeeName"
+			],
+			[
+				"FET",
+				"FETCH_EMPLOYEE"
+			],
+			[
+				"render",
+				"renderScheduleList"
+			],
+			[
+				"emp",
+				"employeeName"
+			],
+			[
+				"em",
+				"employeeName"
+			],
+			[
+				"Rea",
+				"ReactDOM"
+			],
+			[
+				"Date",
+				"DatePicker"
+			],
+			[
+				"st",
+				"startDate"
+			],
+			[
+				"hand",
+				"handleValueChange"
+			],
+			[
+				"current",
+				"currentIndex"
+			],
+			[
+				"daf",
+				"defaultValue"
+			],
+			[
+				"time",
+				"timestamp"
+			],
+			[
+				"create",
+				"createNewArticle"
+			],
+			[
+				"arti",
+				"article"
+			],
+			[
+				"art",
+				"article"
+			],
+			[
+				"ar",
+				"articles"
+			],
+			[
+				"save",
+				"saveArticle"
+			],
+			[
+				"onD",
+				"onDeleteClicked"
+			],
+			[
+				"onSa",
+				"onSaveClicked"
+			],
+			[
+				"to",
+				"toggleEditMode"
+			],
+			[
+				"pro",
+				"PropTypes"
+			],
+			[
+				"edi",
+				"editMode"
+			],
+			[
+				"initi",
+				"initialCount"
+			],
+			[
+				"cur",
+				"currentArticle"
+			],
+			[
+				"init",
+				"initialCount"
+			],
+			[
+				"onCl",
+				"onClear"
+			],
+			[
+				"entry",
+				"entryTypes"
+			],
+			[
+				"bra",
+				"breakTime"
+			],
+			[
+				"enty",
+				"entryTypeId"
+			],
+			[
+				"ent",
+				"entryType"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/henry/github/springboot-demo",
+		"/home/henry/github/springboot-demo/src",
+		"/home/henry/github/springboot-demo/src/main",
+		"/home/henry/github/springboot-demo/src/main/javascript",
+		"/home/henry/github/springboot-demo/src/main/javascript/build",
+		"/home/henry/github/springboot-demo/src/main/javascript/build/views"
+	],
+	"file_history":
+	[
+		"/home/henry/github/springboot-demo/src/main/javascript/app/test.js",
+		"/home/henry/github/springboot-demo/src/main/javascript/app/component/TestApp.jsx",
+		"/home/henry/github/springboot-demo/src/main/javascript/server.js",
+		"/home/henry/github/springboot-demo/src/main/javascript/backend.js",
+		"/home/henry/github/springboot-demo/src/main/javascript/build/views/test.jade",
+		"/home/henry/github/springboot-demo/src/main/javascript/webpack.config.js",
+		"/home/henry/github/springboot-demo/src/main/javascript/app/store/initializer.js",
+		"/home/henry/github/springboot-demo/src/main/javascript/build/test.html",
+		"/home/henry/github/springboot-demo/src/main/javascript/npm.log",
+		"/home/henry/github/springboot-demo/src/main/javascript/build/views/index.jade",
+		"/home/henry/github/springboot-demo/src/main/javascript/build/index.html",
+		"/home/henry/github/springboot-demo/src/main/javascript/package.json",
+		"/home/henry/.config/sublime-text-3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/home/henry/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+		"/home/henry/github/springboot-demo/README.md",
+		"/home/henry/github/springboot-demo/create-fake-data.py",
+		"/home/henry/github/springboot-demo/pom.xml",
+		"/home/henry/github/react-apps/trs-work-scheduler/app/store/initializer.js",
+		"/home/henry/github/react-apps/trs-work-scheduler/build/index.html",
+		"/home/henry/github/react-apps/trs-work-scheduler/package.json",
+		"/home/henry/github/react-apps/trs-work-scheduler/webpack.config.js",
+		"/home/henry/github/react-apps/trs-work-scheduler/app/test.js",
+		"/home/henry/github/react-apps/trs-work-scheduler/app/component/TestApp.jsx",
+		"/home/henry/stash/trs-ucd-db/TRS-18764/update-ts-assignment-tracking-table.sql",
+		"/home/henry/stash/trs-ucd-db/TRS-18764/README.md",
+		"/home/henry/github/react-apps/trs-work-scheduler/app/component/App.jsx",
+		"/home/henry/github/react-apps/trs-work-scheduler/app/component/ScheduleBody.jsx",
+		"/home/henry/github/react-apps/trs-work-scheduler/app/component/ScheduleHeader.jsx",
+		"/home/henry/github/react-apps/trs-work-scheduler/app/component/EmployeeList.jsx",
+		"/home/henry/github/react-apps/trs-work-scheduler/app/index.js",
+		"/home/henry/github/react-apps/trs-work-scheduler/app/component/DatePicker.jsx",
+		"/home/henry/github/react-apps/trs-work-scheduler/build/test.html",
+		"/home/henry/github/react-apps/trs-work-scheduler/app/store/schedule-store.js",
+		"/home/henry/github/react-apps/trs-work-scheduler/app/store/actions.js",
+		"/media/henry/UUI/backup/SQLAliases23.xml",
+		"/home/henry/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/henry/github/react-apps/trs-work-scheduler2/app/index2.js",
+		"/home/henry/github/react-apps/trs-work-scheduler2/app/index.js",
+		"/home/henry/github/react-apps/trs-work-scheduler2/app/component/WorkScheduleView.jsx",
+		"/home/henry/github/react-apps/trs-work-scheduler2/webpack.config.js",
+		"/home/henry/github/react-apps/trs-work-scheduler/app/component/WorkSchedule.jsx",
+		"/home/henry/github/react-apps/trs-work-scheduler/app/component/WorkScheduleView.jsx",
+		"/home/henry/github/egghead-react-fundamentals-es6/lessons/01-intro/App.js",
+		"/home/henry/github/react-apps/react-starter-kit/app/index.js",
+		"/home/henry/github/react-apps/react-starter-kit/app/component/HelloApp.jsx",
+		"/home/henry/github/react-apps/react-starter-kit/build/index.html",
+		"/home/henry/github/react-apps/react-starter-kit/package.json",
+		"/home/henry/github/react-apps/react-starter-kit/webpack.config.js",
+		"/home/henry/github/react-apps/react-starter-kit/app/component/App.jsx",
+		"/home/henry/github/react-apps/task-scheduler/webpack.config.js",
+		"/home/henry/github/react-apps/trs-work-scheduler/app/component/RecurringSchedule.jsx",
+		"/home/henry/github/react-apps/task-scheduler/app/store/appStore.js",
+		"/home/henry/stash/playground/hxxiang/hackathon/index2.html",
+		"/home/henry/stash/playground/hxxiang/hackathon/kb-app2.jsx",
+		"/home/henry/stash/playground/hxxiang/hackathon/exercises/ex-05.2.jsx",
+		"/home/henry/stash/playground/hxxiang/hackathon/kb-app.jsx",
+		"/home/henry/stash/playground/hxxiang/hackathon/views/index.jade",
+		"/home/henry/stash/playground/hxxiang/hackathon/index.jade",
+		"/home/henry/stash/playground/hxxiang/hackathon/presentation.md",
+		"/home/henry/stash/playground/hxxiang/hackaton/presentation.md",
+		"/home/henry/github/react-demo/presentation.md",
+		"/home/henry/github/react-demo/kb-app.jsx",
+		"/home/henry/github/react-demo/index.html",
+		"/home/henry/github/react-demo/exercises/README.md",
+		"/home/henry/github/react-demo/README.md",
+		"/home/henry/github/react-demo/exercises/answers/ex-05.jsx",
+		"/home/henry/github/react-demo/exercises/answers/ex-04.jsx",
+		"/home/henry/github/react-demo/counter-app.jsx",
+		"/home/henry/github/react-demo/index2.html",
+		"/home/henry/github/react-demo/exercises/ex-03.jsx",
+		"/home/henry/github/react-demo/exercises/answers/ex-03.jsx",
+		"/home/henry/github/react-demo/todo-app.jsx",
+		"/home/henry/github/react-demo/exercises/answers/ex-02.jsx",
+		"/home/henry/github/react-demo/exercises/answers/ex-01.jsx",
+		"/home/henry/github/react-demo/exercises/ex-02.jsx",
+		"/home/henry/github/react-demo/exercises/ex-05.jsx",
+		"/home/henry/github/react-demo/kb-app2.jsx",
+		"/home/henry/github/react-apps/task-scheduler/package.json",
+		"/home/henry/github/react-apps/work-scheduler/package.json",
+		"/home/henry/github/react-apps/trs-work-scheduler/build/work-schedule.html",
+		"/home/henry/github/react/trs-work-scheduler/app/component/ScheduleHeader.jsx",
+		"/home/henry/github/react/trs-work-scheduler/build/index.html",
+		"/home/henry/github/react/trs-work-scheduler/app/index.js",
+		"/home/henry/github/react/trs-work-scheduler/app/component/App-Main.jsx",
+		"/home/henry/github/react/trs-work-scheduler/app/component/EmployeeList.jsx",
+		"/home/henry/github/react/trs-work-scheduler/app/component/App.jsx",
+		"/home/henry/github/react/trs-work-scheduler/app/store/schedule-store.js",
+		"/home/henry/github/react/trs-work-scheduler/app/component/NonRecurringSchedule.jsx",
+		"/home/henry/github/react/trs-work-scheduler/app/component/RecurringSchedule.jsx",
+		"/home/henry/github/react/trs-work-scheduler/work-scheduler.html",
+		"/home/henry/github/react/trs-work-scheduler/app/index2.js",
+		"/home/henry/stash/trs-ucd/web/css/uportal.css",
+		"/home/henry/github/react/trs-work-scheduler/server.js",
+		"/home/henry/github/react/trs-work-scheduler/webpack.config.js",
+		"/home/henry/github/react/trs-work-scheduler/build/glyphicons-halflings-regular.svg",
+		"/home/henry/github/react/trs-work-scheduler/package.json",
+		"/home/henry/github/react/trs-work-scheduler/app/index.html",
+		"/home/henry/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/henry/github/react/trs-work-scheduler/app/component/AddSchedule.jsx",
+		"/home/henry/github/react/task-scheduler/app/component/VisibleTodoList.jsx",
+		"/home/henry/github/react/task-scheduler/app/component/TodoList.jsx",
+		"/home/henry/github/react/task-scheduler/app/component/Todo.jsx",
+		"/home/henry/github/react/task-scheduler/app/component/FilterLink.jsx",
+		"/home/henry/github/react/task-scheduler/app/store/appStore.js",
+		"/home/henry/Documents/Holmes Advance Orchestra Field Trip Feb 13.txt",
+		"/home/henry/Documents/email-chaperons-20160213.txt",
+		"/home/henry/github/react/task-scheduler/app/component/AddTodo.jsx",
+		"/home/henry/index.html"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"DOM",
+			"log",
+			"handleAddSchedule",
+			"sortedSchedules",
+			"var ",
+			"RecurringSchedule",
+			"state",
+			" and",
+			"saveSchedule",
+			"currentArticleId",
+			"articleId",
+			"bind",
+			"JsBin Link",
+			"map",
+			"spacer"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"let ",
+			"ScheduleBody",
+			"schedules",
+			",",
+			"(JsBin Link)"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "springboot-demo.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 243.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -111,6 +111,8 @@ spring init --build=maven -d=web --packaging=war --java-version=1.8 springboot-d
     </plugin>
 	
 ```
+[Configuration](http://www.querydsl.com/static/querydsl/latest/reference/html/ch02.html)
+
 
 ### JSP View Template
 
@@ -126,3 +128,15 @@ spring init --build=maven -d=web --packaging=war --java-version=1.8 springboot-d
 	</dependency>
 	
 ```
+
+### Jade View Template (spring-jade4j)
+
+```
+	<dependency>
+		<groupId>de.neuland-bfi</groupId>
+		<artifactId>spring-jade4j</artifactId>
+		<version>1.1.4</version>
+	</dependency>
+```
+[Configuration](https://github.com/neuland/spring-jade4j)
+
