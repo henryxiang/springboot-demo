@@ -26,7 +26,6 @@ spring init --build=maven -d=web --packaging=war --java-version=1.8 springboot-d
       <fork>true</fork>
     </configuration>
   </plugin>
-
 ```
 
 ### JPA and H2 Embedded Database 
@@ -40,7 +39,15 @@ spring init --build=maven -d=web --packaging=war --java-version=1.8 springboot-d
     <groupId>com.h2database</groupId>
     <artifactId>h2</artifactId>
   </dependency>
+```
 
+H2 Web console connection settings:
+
+```
+URL: http://localhost:8080/h2-console
+Driver: org.h2.Driver
+JDBC URL: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+User Name: sa
 ```
 
 ### Lombok
@@ -52,7 +59,6 @@ spring init --build=maven -d=web --packaging=war --java-version=1.8 springboot-d
     <version>1.16.8</version>
     <scope>provided</scope>
   </dependency>
-
 ```
 
 ### Configure logback.xml
@@ -63,7 +69,6 @@ spring init --build=maven -d=web --packaging=war --java-version=1.8 springboot-d
   <configuration>
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
   </configuration>
-
 ```
 
 ### Spring Security
@@ -73,7 +78,6 @@ spring init --build=maven -d=web --packaging=war --java-version=1.8 springboot-d
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-security</artifactId>
 	</dependency>
-
 ```
 
 ### QueryDSL for JPA
@@ -94,22 +98,21 @@ spring init --build=maven -d=web --packaging=war --java-version=1.8 springboot-d
 	...
 	
 	<plugin>
-      <groupId>com.mysema.maven</groupId>
-      <artifactId>apt-maven-plugin</artifactId>
-      <version>1.1.3</version>
-      <executions>
-        <execution>
-          <goals>
-            <goal>process</goal>
-          </goals>
-          <configuration>
-            <outputDirectory>target/generated-sources/java</outputDirectory>
-            <processor>com.querydsl.apt.jpa.JPAAnnotationProcessor</processor>
-          </configuration>
-        </execution>
-      </executions>
-    </plugin>
-	
+    <groupId>com.mysema.maven</groupId>
+    <artifactId>apt-maven-plugin</artifactId>
+    <version>1.1.3</version>
+    <executions>
+      <execution>
+        <goals>
+          <goal>process</goal>
+        </goals>
+        <configuration>
+          <outputDirectory>target/generated-sources/java</outputDirectory>
+          <processor>com.querydsl.apt.jpa.JPAAnnotationProcessor</processor>
+        </configuration>
+      </execution>
+    </executions>
+  </plugin>	
 ```
 [Configuration](http://www.querydsl.com/static/querydsl/latest/reference/html/ch02.html)
 
@@ -125,9 +128,16 @@ spring init --build=maven -d=web --packaging=war --java-version=1.8 springboot-d
 	<dependency>
 		<groupId>javax.servlet</groupId>
 		<artifactId>jstl</artifactId>
-	</dependency>
-	
+	</dependency>	
 ```
+
+Configuration of `application.properties` file
+
+```
+spring.mvc.view.prefix: /WEB-INF/jsp/
+spring.mvc.view.suffix: .jsp
+```
+
 
 ### Jade View Template (spring-jade4j)
 
@@ -138,5 +148,31 @@ spring init --build=maven -d=web --packaging=war --java-version=1.8 springboot-d
 		<version>1.1.4</version>
 	</dependency>
 ```
+
+Jade templates should be put into `src/resources/templates` directory.
+
 [Configuration](https://github.com/neuland/spring-jade4j)
 
+
+### JPA and MySQL
+
+```
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+  </dependency>
+  <dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+  </dependency>
+```
+
+Configuration of `application.properties` file
+
+```
+spring.datasource.url=jdbc:mysql://localhost/springboot_demo
+spring.datasource.username=root
+spring.datasource.password=mysql
+spring.jpa.hibernate.ddl-auto=create-drop
+logging.level.org.hibernate.SQL=DEBUG
+```
