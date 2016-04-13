@@ -1,11 +1,18 @@
 package com.example.controller;
 
 import java.util.Date;
-import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -13,11 +20,13 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class WelcomeController {
 	@RequestMapping(value="/")
-	public String welcome(Map<String, Object> model) {
+	public ModelAndView welcome() {
 		log.info("*** welcome from Spring ***");
-		model.put("time", new Date());
-		model.put("message", "Hello Spring!");
-		return "welcome";
+		ModelAndView model = new ModelAndView("welcome");
+		model.addObject("time", new Date());
+		model.addObject("message", "Spring Boot Demo App");
+		return model;
+		//return "welcome";
 	}
 	
 	@RequestMapping(value="/test")
@@ -34,6 +43,15 @@ public class WelcomeController {
 		model.addAttribute("time", new Date());
 		model.addAttribute("appJs", "test.js");
 		return "testJade";
+	}
+	
+	@RequestMapping(value="/logout", method = RequestMethod.GET)
+	public String logoutPage (HttpServletRequest request, HttpServletResponse response) {
+	    Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+	    if (auth != null){    
+	        new SecurityContextLogoutHandler().logout(request, response, auth);
+	    }
+	    return "redirect:/login?logout";//You can redirect wherever you want, but generally it's a good practice to show login screen again.
 	}
 	
 }
