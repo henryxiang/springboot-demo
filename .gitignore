@@ -5,3 +5,7 @@ target/
 .externalToolBuilders/
 logs/
 *.log
+
+.idea/
+.springBeans
+springboot-demo.iml
