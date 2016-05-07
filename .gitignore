@@ -2,3 +2,7 @@
 .classpath
 .project
 .settings
+
+.idea/
+.springBeans
+springboot-demo.iml
