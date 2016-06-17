@@ -5,6 +5,7 @@ target/
 .externalToolBuilders/
 logs/
 *.log
+*.hot-update.*
 
 .idea/
 .springBeans

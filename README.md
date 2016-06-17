@@ -8,6 +8,13 @@ spring init --build=maven -d=web --packaging=war --java-version=1.8 springboot-d
 
 ```
 
+### Run the application in dev mode
+
+```
+mvn spring-boot:run
+
+```
+
 ### Spring Boot DevTools
 
 ```
