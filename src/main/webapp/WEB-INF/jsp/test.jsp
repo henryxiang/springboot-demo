@@ -11,7 +11,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Testing</title>
+    <title>Testing JSP</title>
     <link rel="stylesheet" href="${css}" type="text/css" />  
   </head>
   

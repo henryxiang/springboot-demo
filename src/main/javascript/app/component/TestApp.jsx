@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import moment from 'moment';
-// import request from 'superagent';
 import fetech from 'isomorphic-fetch';
 
 const TestApp = React.createClass({
@@ -23,20 +22,6 @@ const TestApp = React.createClass({
   },
 
   componentDidMount() {
-    // request
-    //   .get('/users')
-    //   .set('Accept', 'application/json')
-    //   // .withCredentials()
-    //   // .auth('user', 'spring')
-    //   .end((err, res) => {
-    //     if (err) {
-    //       console.log("Request errors:");
-    //       console.log(err, res);
-    //     } else {
-    //       console.log(res);
-    //       this.setState({users: res.body});
-    //     }
-    //   });
       fetch('/users', {
           credentials: 'include'
       })

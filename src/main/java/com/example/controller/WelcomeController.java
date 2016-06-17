@@ -26,7 +26,7 @@ public class WelcomeController {
 	@RequestMapping(value="/")
 	public ModelAndView welcome(Authentication auth) {
 		List<String> roles = getUserRoles(auth);
-		log.info("*** welcome from Spring ***");
+		log.info("**** Spring Boot Demo ****");
 		log.info("User Roles: " + roles.toString());
 		ModelAndView model = new ModelAndView("welcome");
 		model.addObject("time", new Date());
@@ -37,15 +37,15 @@ public class WelcomeController {
 	
 	@RequestMapping(value="/test")
 	public String test(Model model) {
-		log.info("*** Test React JS ***");
+		log.info("**** Test React JS ****");
 		model.addAttribute("time", new Date());
 		model.addAttribute("appJs", "test.js");
 		return "test";
 	}
 	
-	@RequestMapping(value="/jade")
+	@RequestMapping(value="/testJade")
 	public String testJade(Model model) {
-		log.info("*** Test Jade Template ***");
+		log.info("**** Test Jade Template ****");
 		model.addAttribute("time", new Date());
 		model.addAttribute("appJs", "test.js");
 		return "testJade";

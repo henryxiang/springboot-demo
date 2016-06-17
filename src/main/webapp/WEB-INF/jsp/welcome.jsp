@@ -6,7 +6,7 @@
 <html lang="en">
 
 <body>
-	<c:url value="/public/test.html" var="url"/>
+	<c:url value="/test" var="url"/>
 	Message: ${message}
 	<br/>
 	Date and time:  ${time}
