@@ -37,7 +37,7 @@
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^2.2.1",
     "jquery-ui": "^1.10.5",
-    "material-ui": "^0.15.0",
+    "material-ui": "^0.14.4",
     "moment": "^2.10.6",
     "node-uuid": "^1.4.7",
     "react": "^0.14.3",
