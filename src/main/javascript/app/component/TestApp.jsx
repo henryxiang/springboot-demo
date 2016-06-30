@@ -6,6 +6,10 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import FlatButton from 'material-ui/lib/flat-button';
 
+import log4javascript from 'log4javascript';
+
+const log = log4javascript.getDefaultLogger();
+
 // Needed for onTouchTap or onClick event
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
@@ -38,7 +42,8 @@ const TestApp = React.createClass({
           return response.json()
       })
       .then(json => {
-          console.debug("Users => ", JSON.stringify(json, null, 2));
+          // console.debug("Users => ", JSON.stringify(json, null, 2));
+          log.debug("Users => ", JSON.stringify(json, null, 2));
           this.setState({users: json});
       });
   }
