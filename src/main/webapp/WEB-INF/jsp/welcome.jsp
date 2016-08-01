@@ -6,12 +6,15 @@
 <html lang="en">
 
 <body>
-	<c:url value="/test" var="url"/>
+  <c:url value="/test" var="urlTest"/>
+	<c:url value="/logout" var="urlLogOut"/>
 	Message: ${message}
 	<br/>
 	Date and time:  ${time}
 	<br/>
-	<a href="${url}">Test Application</a>
+	<a href="${urlTest}">Test Application</a>
+  <br/>
+  <a href="${urlLogOut}">Log Out</a>
 </body>
 
 </html>

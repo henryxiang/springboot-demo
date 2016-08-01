@@ -15,11 +15,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.withUser("user").password("password").roles("USER", "ADMIN");
 	}
 
-	@Override
-	public void configure(HttpSecurity httpSecurity) throws Exception {
-		httpSecurity
-			.csrf().disable()
-			.headers().frameOptions().disable();
-	}
+	// This causes error for Spring Security Form authentication
+	// @Override
+	// public void configure(HttpSecurity httpSecurity) throws Exception {
+	// 	httpSecurity
+	// 		.csrf().disable()
+	// 		.headers().frameOptions().disable();
+	// }
 
 }
