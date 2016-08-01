@@ -5,10 +5,27 @@ import fetech from 'isomorphic-fetch';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import FlatButton from 'material-ui/lib/flat-button';
+import DatePicker from 'material-ui/lib/data-picker';
 
-import log4javascript from 'log4javascript';
+import {getLogger, dump} from '../util/logger.js';
+// import log4javascript from 'log4javascript';
 
-const log = log4javascript.getDefaultLogger();
+// const logFormat = "%d{HH:mm:ss} %-5p %c - %m%n";
+// const popUpAppender = new log4javascript.PopUpAppender();
+// const popUpLayout = new log4javascript.PatternLayout(logFormat);
+
+// const getLogger = (loggerName) => {
+//   const log = log4javascript.getLogger(loggerName);
+//   popUpAppender.setLayout(popUpLayout);
+//   log.addAppender(popUpAppender);
+//   return log;
+// }
+
+// const dump = (data) => {
+//   return JSON.stringify(data, null, 2);
+// }
+
+const log = getLogger("TestApp");
 
 // Needed for onTouchTap or onClick event
 // http://stackoverflow.com/a/34015469/988941
@@ -24,12 +41,14 @@ const TestApp = React.createClass({
     const {users} = this.state;
     return (
       <div>
-
         <h3>User Lists</h3>
+
         <ul>
           {users.map((u,i) => (<li key={i}>{u.id}, {u.userName}, {u.firstName}, {u.lastName}, {u.birthday}</li>))}
         </ul>
-          <FlatButton label="Default" />
+
+        <FlatButton label="Default" />
+        
       </div>
     )
   },
@@ -43,7 +62,7 @@ const TestApp = React.createClass({
       })
       .then(json => {
           // console.debug("Users => ", JSON.stringify(json, null, 2));
-          log.debug("Users => ", JSON.stringify(json, null, 2));
+          log.debug("Users => ", dump(json));
           this.setState({users: json});
       });
   }

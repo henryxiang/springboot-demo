@@ -1,4 +1,5 @@
 var express = require('express'),
+    cookieParser = require('cookie-parser')
     faker = require('faker'),
     moment = require('moment'),
     _ = require('lodash'),
@@ -11,10 +12,21 @@ server.set('views', documentRoot+'/views');
 console.log("Use document root: " + documentRoot);
 server.use("/", express.static(documentRoot));
 
+server.use(cookieParser());
+
 server.get("/", function(req, res) {
   var userName = faker.name.firstName() + ' ' + faker.name.lastName();
   var currentDate = moment().format("MMMM DD, YYYY")
   res.render("index", {userName: userName, currentDate: currentDate});
+});
+
+server.get("/logger", function(req, res) {
+  var enableLog = '';
+  if (req.query.enable) {
+    enableLog = 'true'; 
+  }
+  res.cookie('enableLog', enableLog);
+  res.json({enableLog: enableLog});
 });
 
 server.get("/test", function(req, res) {
