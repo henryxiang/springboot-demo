@@ -17,23 +17,25 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
 		auth.inMemoryAuthentication()
-			.withUser("user").password("password").roles("USER", "ADMIN");
+			.withUser("admin").password("password").roles("USER", "ADMIN").and()
+            .withUser("user").password("password").roles("USER");
 	}
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
             .authorizeRequests()
-                .antMatchers("/", "/h2/**").permitAll()
+                .antMatchers("/").permitAll()
                 .anyRequest().authenticated()
-                .and()
-            .formLogin()
+            .and()
+                .formLogin()
                 .loginPage("/login")
                 .permitAll()
             .and()
                 .logout()
                 .permitAll();
 
+        // Needed for accessing H2 console via web
         http.csrf().disable();
         http.headers().frameOptions().disable();
     }
