@@ -1,14 +1,11 @@
 package com.example.domain;
 
+import lombok.Data;
+
+import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Date;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-import lombok.Data;
+import java.util.List;
 
 @Entity
 @Data
@@ -22,5 +19,13 @@ public class User implements Serializable {
 	private String firstName;
 	private String lastName;
 	private Date birthday;
+
+	@ManyToMany
+	@JoinTable(
+		name="USER_GROUP",
+		joinColumns=@JoinColumn(name="USER_ID", referencedColumnName="ID"),
+		inverseJoinColumns=@JoinColumn(name="GROUP_ID", referencedColumnName="ID")
+	)
+	private List<Group> groups;
 
 }

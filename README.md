@@ -183,3 +183,18 @@ spring.datasource.password=mysql
 spring.jpa.hibernate.ddl-auto=create-drop
 logging.level.org.hibernate.SQL=DEBUG
 ```
+
+### Spring Data Rest
+
+```
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-rest</artifactId>
+  </dependency>
+```
+
+Configuration of `application.properties` file
+
+```
+spring.data.rest.base-path=/api
+```

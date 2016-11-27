@@ -8,3 +8,17 @@ insert into user(user_name, first_name, last_name, birthday) values('konopelskia
 insert into user(user_name, first_name, last_name, birthday) values('zulaufjaylen', 'Randi', 'Ondricka', '2001-11-14');
 insert into user(user_name, first_name, last_name, birthday) values('oschiller', 'Desean', 'Carroll', '1974-08-16');
 insert into user(user_name, first_name, last_name, birthday) values('jamin97', 'Squire', 'Lynch', '2004-03-25');
+
+insert into groups(group_name) values('admin');
+insert into groups(group_name) values('user');
+insert into groups(group_name) values('guest');
+
+insert into user_group(user_id, group_id) values(1, 1);
+insert into user_group(user_id, group_id) values(1, 2);
+insert into user_group(user_id, group_id) values(2, 1);
+insert into user_group(user_id, group_id) values(2, 2);
+insert into user_group(user_id, group_id) values(3, 2);
+insert into user_group(user_id, group_id) values(4, 2);
+insert into user_group(user_id, group_id) values(5, 3);
+insert into user_group(user_id, group_id) values(6, 3);
+
