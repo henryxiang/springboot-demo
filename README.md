@@ -1,5 +1,23 @@
-## Spring Boot Demo
+## Spring Boot Demo Projects
 
-* maven-projects
-* gradle-projects
-* groovy-projects
+### Install SDKMAN
+```bash
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+```
+
+### Install Spring Boot CLI using SDKMAN
+```bash
+sdk install springboot
+spring help
+```
+
+### List Initializer Options
+```
+spring help init
+```
+
+### Create a Demo Spring Boot Project
+```
+spring init -d=web,jpa
+```
